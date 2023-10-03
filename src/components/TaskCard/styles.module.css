@@ -1,0 +1,26 @@
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    gap: 0.75rem;
+    padding: 1rem;
+
+    background-color: var(--gray-500);
+    border-radius: 0.5rem;
+
+}
+
+.deleteButton {
+    display: flex;
+    align-items: center;
+
+    background: none;
+    color: var(--gray-300);
+
+    transition: color 0.4s;
+}
+
+.deleteButton:hover {
+    color: var(--red-500);
+}
