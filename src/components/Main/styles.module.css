@@ -1,0 +1,64 @@
+.main {
+    max-width: 46rem;
+    margin: 0 auto;
+    height: calc(100vh - 12.5rem);
+    
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-top: -1.5rem;
+    
+    padding-bottom: 2rem;
+}
+
+.main header form{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.tasksList {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.5rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.headerTasksList {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+    font-size: 0.875rem;
+
+    
+    & strong span {
+        background: var(--gray-400);
+        padding: 0.125rem 0.5rem; 
+        margin-left: 0.5rem;
+
+        border-radius: 100%;
+
+        color: var(--gray-200);
+        font-size: 0.75rem;
+    }
+
+    & strong:first-child {
+        color: var(--blue-500);
+    }
+
+    & strong:last-child {
+        color: var(--purple-500);
+    }
+}
+
+.tasksCardsList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+
+    /* overflow-y: scroll; */
+    /* z-index: -1; */
+}
