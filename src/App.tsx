@@ -2,6 +2,7 @@ import { Footer } from "./components/Footer";
 import { Header } from "./components/Header"
 import { Main } from "./components/Main"
 import './theme/global.css'
+import styles from './styles.module.css'
 import { axeAccessibilityReporter } from "./utils/axeAccessibilityReporter"
 import * as Sentry from "@sentry/react";
 
@@ -21,11 +22,11 @@ axeAccessibilityReporter()
 
 function App() {
   return (
-    <>
+    <div className={styles.container}>
       <Header />
       <Main />
       <Footer />
-    </>
+    </div>
   )
 }
 
