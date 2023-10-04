@@ -1,4 +1,4 @@
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent, FormEvent, useEffect, useState } from "react";
 import { v4 as uuidv4 } from 'uuid';
 
 import { AddButton } from "../AddButton";
@@ -20,7 +20,7 @@ export function Main() {
     setTask(event.target.value);
   }
 
-  function handleAddTask() {
+  function handleAddTask(event: FormEvent) {
     event?.preventDefault();
 
     if (task.trim() === '') {
@@ -76,6 +76,10 @@ export function Main() {
 
   );
 
+  useEffect(() => {
+    console.log(tasksList);
+  }, [tasksList]);
+
   return (
     <main className={styles.main}>
       <header>
@@ -84,7 +88,7 @@ export function Main() {
             task={task}
             onChange={handleChangeTask}
           />
-          <AddButton onClick={handleAddTask} />
+          <AddButton />
         </form>
       </header>
 
