@@ -1,5 +1,4 @@
 import { ChangeEvent, FormEvent, useEffect, useState } from "react";
-import { v4 as uuidv4 } from 'uuid';
 
 import { AddButton } from "../AddButton";
 import { Input } from "../Input";
