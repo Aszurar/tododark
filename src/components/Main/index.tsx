@@ -3,21 +3,30 @@ import { v4 as uuidv4 } from 'uuid';
 
 import { AddButton } from "../AddButton";
 import { Input } from "../Input";
-import { TaskCard } from "../TaskCard";
+import { TaskCard, TaskCardMemoized } from "../TaskCard";
 
 import { MAX_TASK_TITLE_LENGTH, TASKS_LIST_DEFAULT, TaskProps } from "../../dto/taskDTO";
 
 import styles from './styles.module.css';
+import { taskCreate } from "../../storage/tasks/tasksCreate";
+import { tasksGetAll } from "../../storage/tasks/tasksGetAll";
+import { tasksDelete } from "../../storage/tasks/tasksDelete";
+import { taskCheck } from "../../storage/tasks/tasksCheck";
 
 export function Main() {
   const [task, setTask] = useState("");
-  const [tasksList, setTasksList] = useState<TaskProps[]>(TASKS_LIST_DEFAULT);
+  const [tasksList, setTasksList] = useState<TaskProps[]>([]);
 
   const tasksListQuantity = tasksList.length;
   const tasksListCheckedQuantity = tasksList.filter(task => task.isChecked).length;
 
   function handleChangeTask(event: ChangeEvent<HTMLInputElement>) {
     setTask(event.target.value);
+  }
+
+  function updateTasksList() {
+    const tasksListUpdated = tasksGetAll();
+    setTasksList(tasksListUpdated);
   }
 
   function handleAddTask(event: FormEvent) {
@@ -39,29 +48,26 @@ export function Main() {
         : task;
 
     const newTask: TaskProps = {
-      id: uuidv4(),
+      id: crypto.randomUUID(),
       title: taskFormatted,
       isChecked: false,
+      createdAt: new Date()
     };
 
-    setTasksList(prevState => [...prevState, newTask]);
+    taskCreate(newTask);
+    updateTasksList();
     setTask('');
+
   }
 
   function handleCheckTask(id: string) {
-    const tasksListUpdated = tasksList.map(task => {
-      if (task.id === id) {
-        task.isChecked = !task.isChecked;
-      }
-      return task;
-    })
-
-    setTasksList(tasksListUpdated);
+    taskCheck({ id })
+    updateTasksList();
   }
 
   function handleDeleteTask(id: string) {
-    const newtasksListUpdated = tasksList.filter(task => task.id !== id);
-    setTasksList(newtasksListUpdated);
+    tasksDelete({ id });
+    updateTasksList();
   }
 
   const tasksCardsList = tasksList.map((task) =>
@@ -70,15 +76,20 @@ export function Main() {
       id={task.id}
       title={task.title}
       isChecked={task.isChecked}
+      createdAt={task.createdAt}
       handleCheckTask={() => handleCheckTask(task.id)}
       handleDeleteTask={() => handleDeleteTask(task.id)}
     />
-
   );
 
   useEffect(() => {
     console.log(tasksList);
+    console.log("testeando:",)
   }, [tasksList]);
+
+  useEffect(() => {
+    updateTasksList();
+  }, [])
 
   return (
     <main className={styles.main}>
