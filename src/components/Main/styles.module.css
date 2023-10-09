@@ -1,19 +1,19 @@
 .main {
     width: 46rem;
     margin: 0 auto;
-    padding-horizontal: 1rem;
+    padding: 0 1rem;
     
+    height: calc(100vh - 12.5rem - 3.4625rem);
+
     display: flex;
-    flex: 1;
     flex-direction: column;
-    margin-top: -1.5rem;
     
-    padding-bottom: 2rem;
 }
 
 .main header form{
     display: flex;
     gap: 0.5rem;
+    margin-top: -1.5rem;
 }
 
 .tasksList {
@@ -24,6 +24,8 @@
     gap: 1.5rem;
     margin-top: 4rem;
     margin-bottom: 2rem;
+    overflow-y: auto;
+
 }
 
 .headerTasksList {
@@ -62,5 +64,23 @@
     
     gap: 0.75rem;
     overflow-y: scroll;
+
+    padding-bottom: 1.5rem;
+
+    &::-webkit-scrollbar {
+        width: 0.375rem;
+      }
+
+   &::-webkit-scrollbar-track {
+        background: transparent;
+      }
    
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--blue-700);
+        border-radius: 8px;
+    }
+    
+    &::-webkit-scrollbar-thumb:hover {
+        background-color: var(--blue-500);
+    }
 }
