@@ -3,11 +3,13 @@ import styles from './styles.module.css';
 import { CheckIcon } from '../../assets/CheckIcon';
 import { TaskProps } from '../../dto/taskDTO';
 
-type CheckBoxProps = TaskProps & {
+type TaskPropsWithoutCreatedAt = Omit<TaskProps, 'createdAt'>;
+
+type CheckBoxProps = TaskPropsWithoutCreatedAt & {
   handleCheckTask: () => void;
 }
 
-export function CheckBox({ id, isChecked, title, handleCheckTask }: CheckBoxProps) {
+export function CheckBox({ id, isChecked, title, handleCheckTask, }: CheckBoxProps) {
 
   const checkboxToggleStyle = isChecked ? styles.checkboxRootChecked :
     styles.checkboxRootUnchecked;

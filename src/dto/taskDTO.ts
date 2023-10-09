@@ -2,6 +2,7 @@ export type TaskProps = {
     id: string;
     title: string;
     isChecked: boolean;
+    createdAt: Date;
 };
 
 const MAX_TASK_TITLE_LENGTH = 250;
