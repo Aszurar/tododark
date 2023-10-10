@@ -25,10 +25,12 @@ module.exports = {
     '@typescript-eslint'
   ],
   rules: {
+    "maxLen": ["error", { "code": 80 }],
     "react/self-closing-comp": "error",
     'prettier/prettier': ["error", {
       'printWidth': 80,
       'tabWidth': 2,
+      'maxLen': ['error', { 'code': 80 }],
       'singleQuote': true,
       'trailingComma': 'all',
       'arrowParens': 'always',
