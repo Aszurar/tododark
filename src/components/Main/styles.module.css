@@ -1,19 +1,46 @@
 .main {
-    width: 46rem;
-    margin: 0 auto;
-    padding: 0 1rem;
-    
-    height: calc(100vh - 12.5rem - 3.4625rem);
-
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    height: calc(100vh - 12.5rem - 3.4625rem);
+    width: 100%;
+    max-width: 46rem;
+    padding: 0 1rem;
     
+
+    @media (max-width: 480px){
+        height: calc(100vh - 8rem - 3.4625rem - 1.5rem);    
+    }
+
+    @media (max-width: 300px){
+        height: calc(100vh - 11rem - 3.4625rem - 1.5rem);      
+    }
+}
+
+.main header {
+    height: 4.375rem;
 }
 
 .main header form{
     display: flex;
+    align-items: center;
+    
     gap: 0.5rem;
     margin-top: -1.5rem;
+}
+
+.taskCharactersQuantity {
+    display: flex;
+    width: fit-content;
+    padding: 0.125rem 0.5rem;
+    
+    color: var(--blue-500);
+    font-weight: bold;
+    font-size: 0.75rem;
+}
+
+.taskCharacterLimit {
+    color: var(--purple-500);
 }
 
 .tasksList {
@@ -26,6 +53,15 @@
     margin-bottom: 2rem;
     overflow-y: auto;
 
+    @media (max-width: 480px) {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    @media (max-width: 300px) {
+        margin-top: 1rem;
+    }
+    
 }
 
 .headerTasksList {
@@ -42,7 +78,7 @@
         padding: 0.125rem 0.5rem; 
         margin-left: 0.5rem;
 
-        border-radius: 100%;
+        border-radius: 12px;
 
         color: var(--gray-200);
         font-size: 0.75rem;
@@ -55,6 +91,22 @@
     & strong:last-child {
         color: var(--purple-500);
     }
+
+    @media (max-width: 360px) {
+        flex-direction: column;
+
+        & div {
+            order: -1;
+        }
+    }
+}
+
+.checkAllContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 50%;
+    
 }
 
 .tasksCardsList {
