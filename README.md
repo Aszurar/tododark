@@ -102,6 +102,14 @@
   [![Design](https://i.imgur.com/xDgCJf4.png)](https://www.figma.com/file/u2TAXCfiufWLNRZibyl3Hj/ToDo-List-%E2%80%A2-Desafio-React-(Copy)?type=design&node-id=56-96&mode=design&t=nl3sM63VnZNZZuAn-0)
 </div>
 
+  <div align="center" >
+      <img src="https://i.imgur.com/NmF6GZD.png" width="800">
+      <img src="https://i.imgur.com/sFUnh0p.png" width="800">
+  </div>
+  <div align="center" >
+      <img src="" width="350">_<img src="" width="350">
+  </div>
+
 ---
 
 ## :seedling: Requisitos Mínimos
@@ -111,13 +119,12 @@
   3. Vite
   4. Yarn(ou NPM)
   
-- **Curtir Comentários**
+- **Excluindo todas tarefas**
 
   <div align="center" >
-      <img src="" width="500">
-  </div>
-  <div align="center" >
-      <img src="" width="350">_<img src="" width="350">
+      <img src="https://i.imgur.com/UjpV7oP.png" width="800">
+      <img src="https://i.imgur.com/7U47hiU.png" width="800">
+      <img src="https://i.imgur.com/UYH97ns.png" width="800">
   </div>
 
 ---
