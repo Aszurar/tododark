@@ -1,27 +1,194 @@
-# React + TypeScript + Vite
+# #2 - React: **<https://tododark-aszurar.netlify.app>**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
+    <img src="https://i.imgur.com/qW74Df1.png" width="1000">
+</div>
 
-Currently, two official plugins are available:
+## todo dark
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- O projeto **todo dark** é um site de lista de tarefas, com a possibilidade de adicionar, remover, marcar e persistir os dados de forma simples na web.
+- A acessibilidade também foi levada em consideração, com o uso da lib axe-core para testes e correções de acessibilidade assim como leitor de tela ChromeVox.
+- O site foi publicado com CI/CD por meio da plataforma **[Netlify](https://www.netlify.com/)**.
+- Acesse em: **<https://tododark-aszurar.netlify.app>**
 
-## Expanding the ESLint configuration
+  <div align="center">
+    <h3><a href="https://tododark-aszurar.netlify.app">todo dark</a></h3>
+  </div>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<div align="center">
 
-- Configure the top-level `parserOptions` property like this:
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d1883904-92e9-4862-b4c8-23883152c1bb/deploy-status)](https://app.netlify.com/sites/tododark-aszurar/deploys) [![React](https://img.shields.io/badge/-React-black?style=flat&logo=react&link=https://react.dev)](https://react.dev/) [![Vite](https://img.shields.io/badge/-Vite-%23646CFF.svg?style=flat&logo=vite&logoColor=white&link=https://vitejs.dev/)](https://vitejs.dev/) [![TypeScript](https://img.shields.io/badge/-TypeScript-%23007ACC?style=?style=flat-square&logo=typescript&logoColor=white&link=https://www.typescriptlang.org/)](https://www.typescriptlang.org/) [![JavaScript](https://img.shields.io/badge/-JavaScript-%23323330.svg?style=flat&logo=javascript&link=https://www.javascript.com/)](https://www.javascript.com/) [![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white&link=https://developer.mozilla.org/pt-BR/docs/Web/HTML)](https://developer.mozilla.org/pt-BR/docs/Web/HTML) [![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&link=https://www.w3schools.com/css/)](https://www.w3schools.com/css/) [![Yarn](https://img.shields.io/badge/-yarn-%232C8EBB?style=flat&logo=yarn&logoColor=white&link=https://yarnpkg.com/)](https://yarnpkg.com/)
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+</div>
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+<div align="center">
+        <h2>
+          <a href="#information_source-sobre">Sobre</a>&nbsp;|&nbsp;
+          <a href="#interrobang-motivo">Motivo</a>&nbsp;|&nbsp;
+          <a href="#art-design">Design</a>&nbsp;|&nbsp;
+          <a href="#seedling-requisitos-mínimos">Requisitos</a>&nbsp;|&nbsp;
+          <a href="#rocket-tecnologias-utilizadas">Tecnologias</a>&nbsp;|&nbsp;
+          <a
+          href="#truck-entrega-e-distribuição-continua">CI/CD</a>&nbsp;|&nbsp;
+          <a href="#package-como-baixar-e-executar-o-projeto">Baixar e Executar</a>&nbsp;
+        </h2>
+</div>
+
+---
+
+<div align="center" >
+    <img src="" width="500">
+</div>
+
+- [**Link do vídeo completo sobre o projeto**]()
+
+---
+
+## :information_source: Sobre
+
+- O projeto **todo dark** é um site de lista de tarefas, com a possibilidade de adicionar, remover, marcar como concluída e persistir as tarefas por meio do localStorage.
+- É o 1º desafio do curso **Ignite da trilha React Native 2022 da [Rocketseat](https://www.rocketseat.com.br/)**
+- Para a construção da interface desse projeto foi usado **[React](https://react.dev)** com **[TypeScript](https://www.typescriptlang.org/)**.
+- A estilização é feita com CSS comum sem nenhuma lib por meio do **[CSS modules](https://github.com/css-modules/css-modules)** já que a ideia é entender o básico do React em desenvolvimento web.
+
+- **Realizando Comentário**
+   <div align="center" >
+      <img src="" width="500">
+   </div>
+  <div align="center" >
+      <img src="" width="350">_<img src="" width="350">
+  </div>
+
+---
+
+## :interrobang: Motivo
+
+- Esse projeto tem o objetivo de praticar os conceitos básicos do desenvolvimento web com React como:
+  - Praticar o uso de TypeScript;
+  - Lógica de programação com JavaScript;
+  - Componentes, componentização e suas propriedades;
+  - Variável Estado e manipulações de variável Estado;
+  - Otimização simples como memo
+  - Formatação de datas com Date FNS
+  - Persistência de dados básica com localStorage;
+  - Estilização básica com CSS e a aplicação de CSS modules;
+  - Boas práticas de acessibilidade com axe-core;
+  - Uso de elementos do Radix UI para construção de modais e tooltips com melhor acessibilidade;
+
+- É um projeto simples, mas que trata da base de uma aplicação web com React.
+- Temos funcionalidades e práticas como:
+  1. Listar tarefas;
+  2. Criar novas tarefas;
+  3. Excluir tarefas;
+  4. Persistir as tarefas por meio do localStorage;
+  5. Melhoria de acessibilidade com testes e correções com axe-core e ChromeVox.
+  6. Uso do Radix UI para construção de Modais e Tooltips com melhor acessibilidade
+  7. Estilização com CSS modules
+
+- **Exclusão de Comentários**
+
+  <div align="center" >
+      <img src="" width="500">
+  </div>
+  <div align="center" >
+      <img src="" width="350">_<img src="" width="350">
+  </div>
+
+---
+
+## :art: Design
+
+- O Design do projeto foi fornecido pela **[Rocketseat](https://www.rocketseat.com.br/)** no primeiro módulo do Ignite - React por meio do Figma.
+
+<div align="center">
+  <h3><a href="https://www.figma.com/file/hJ0lfBcqF3lM76iVweb1y0/Ignite-Feed-(Community)?type=design&node-id=0-1&mode=design&t=RuHSPQg3xNweHyde-0">todo dark</a></h3>
+
+  [![Design](https://i.imgur.com/xDgCJf4.png)](https://www.figma.com/file/hJ0lfBcqF3lM76iVweb1y0/Ignite-Feed-(Community)?type=design&node-id=0-1&mode=design&t=RuHSPQg3xNweHyde-0)
+
+</div>
+
+---
+
+## :seedling: Requisitos Mínimos
+
+  1. NodeJS
+  2. React
+  3. Vite
+  4. Yarn(ou NPM)
+  
+- **Curtir Comentários**
+
+  <div align="center" >
+      <img src="" width="500">
+  </div>
+  <div align="center" >
+      <img src="" width="350">_<img src="" width="350">
+  </div>
+
+---
+
+## :rocket: Tecnologias Utilizadas
+
+- O projeto foi desenvolvido utilizando as seguintes tecnologias:
+
+  1. **[axe-core/react](https://www.npmjs.com/package/@axe-core/react)**
+  2. **[Date FNS](https://date-fns.org/)**
+  3. **[JavaScript](https://developer.mozilla.org/pt1.BR/docs/Web/JavaScript)**
+  4. **[Netlify](https://www.netlify.com/)**
+  5. **[NodeJS](https://nodejs.org/en/)**
+  6. **[Phosphor Icons](https://phosphoricons.com/)**
+  7. **[Radix UI](https://www.radix-ui.com/)**
+  8. **[React](https://pt1.br.react.dev/)**
+  9. **[Sentry](https://sentry.io/welcome/)**
+  10. **[TypeScript](https://www.typescriptlang.org/)**
+  11. **[Vite](https://vitejs.dev/)**
+  12. **[Yarn](https://classic.yarnpkg.com/blog/2017/05/12/introducing-yarn/)**
+
+---
+
+## :truck: Entrega e distribuição continua
+
+**<https://tododark-aszurar.netlify.app/>**
+
+- Para a publicação da aplicação foi por meio da plataforma **[Netlify](https://www.netlify.com/)** onde é possível publicar de forma rápida, fácil e simples projetos React que estão hospedados no GitHub, GitLab, dentre outras plataformas de repositório remoto de graça.
+- Com isso, o CI/CD já é aplicado automaticamente por meio dessa plataforma definindo a branch de produção, sempre que houver uma atualização nela, será gerado uma nova versão do projeto e já publicado.
+- Além disso, podemos customizar o próprio endereço do site, adicionar ferramentas dentre outras funcionalidades facilmente.
+
+<div align="center">
+<img src="https://i.imgur.com/KEj23Ou.png" width="1000">
+</div>
+
+---
+
+## :package: Como baixar e executar o projeto
+
+### Baixar
+
+- Clonar o projeto:
+
+  ```bash
+   git clone https://github.com/Aszurar/tododark
+  ```
+
+- É necessário ter o Node.js e um gerenciador de pacotes, como o Yarn, instalados em seu sistema. Se você ainda não os tem, siga estas instruções:
+  - [Instalação do NodeJS](https://nodejs.org/en/)
+  - [Instalação do Yarn](https://classic.yarnpkg.com/blog/2017/05/12/introducing-yarn/)
+
+- Instalação das dependências:
+  - Execute o comando abaixo dentro da pasta do projeto
+
+    ```bash
+      yarn
+    ```
+
+### Execução
+
+- Caso tudo tenha sido instalado com sucesso, basta executar na raiz do projeto:
+
+  ```bash
+    yarn dev
+  ```
+
+---
+
+Desenvolvido por :star2: Lucas de Lima Martins de Souza.
