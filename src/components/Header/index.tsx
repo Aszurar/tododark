@@ -1,5 +1,5 @@
-import Logo from '../../assets/Logo.png';
-import styles from './styles.module.css';
+import Logo from '../../assets/Logo.png'
+import styles from './styles.module.css'
 export function Header() {
   return (
     <header className={styles.header}>
