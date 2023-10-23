@@ -84,13 +84,10 @@
   6. Uso do Radix UI para construção de Modais e Tooltips com melhor acessibilidade
   7. Estilização com CSS modules
 
-- **Exclusão de Comentários**
-
+- **Marcando tarefas**
   <div align="center" >
-      <img src="" width="500">
-  </div>
-  <div align="center" >
-      <img src="" width="350">_<img src="" width="350">
+      <img src="https://i.imgur.com/oIwtbi3.png" width="800">
+      <img src="https://i.imgur.com/SpZr18B.png" width="800">
   </div>
 
 ---
