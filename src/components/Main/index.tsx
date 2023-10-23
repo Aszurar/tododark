@@ -1,5 +1,5 @@
 import { ChangeEvent, FormEvent, useEffect, useState } from 'react'
-
+import * as Dialog from '@radix-ui/react-dialog'
 import { AddButton } from '../AddButton'
 import { Input } from '../Input'
 import { TaskCardMemoized } from '../TaskCard'
@@ -17,8 +17,8 @@ import {
 import { ListChecks, Trash } from '@phosphor-icons/react'
 import { ButtonWithTooltip } from '../ButtonWithTooltip'
 
+import { EmptyList } from '../EmptyList'
 import styles from './styles.module.css'
-import * as Dialog from '@radix-ui/react-dialog'
 
 export function Main() {
   const [task, setTask] = useState('')
@@ -52,11 +52,14 @@ export function Main() {
 
   function updateTasksList() {
     const tasksListUpdated = tasksGetAll()
+    console.log('Lista de tarefas', tasksListUpdated)
     const tasksListSortedByDateDescending =
       onSortByDateDescending(tasksListUpdated)
     const tasksListSortedByChecked = onSortByChecked(
       tasksListSortedByDateDescending,
     )
+
+    console.log('Lista de tarefas ordenada', tasksListSortedByChecked)
 
     setTasksList(tasksListSortedByChecked)
   }
@@ -198,7 +201,9 @@ export function Main() {
           </strong>
         </section>
 
-        <section className={styles.tasksCardsList}>{tasksCardsList}</section>
+        <section className={styles.tasksCardsList}>
+          {tasksListQuantity === 0 ? <EmptyList /> : tasksCardsList}
+        </section>
       </section>
 
       <Dialog.Root open={isDeleteAllTasksModalOpen}>
