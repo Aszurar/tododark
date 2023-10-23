@@ -52,9 +52,11 @@
 - A estilização é feita com CSS comum sem nenhuma lib por meio do **[CSS modules](https://github.com/css-modules/css-modules)** já que a ideia é entender o básico do React em desenvolvimento web.
 
 - **Adição de tarefa**
-  <div align="center" >
-      <img src="https://i.imgur.com/IRVvDpM.png" width="1000">
-  </div>
+
+<div align="center" >
+      <img src="https://i.imgur.com/IRVvDpM.png" width="800">
+      <img src="https://i.imgur.com/tUiQI9o.png" width="800">
+</div>
 
 ---
 
