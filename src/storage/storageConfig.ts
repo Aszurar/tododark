@@ -1,3 +1,3 @@
-const TASK_COLLECTION = 'todo-dark:tasks';
+const TASK_COLLECTION = 'todo-dark:tasks'
 
 export { TASK_COLLECTION }
