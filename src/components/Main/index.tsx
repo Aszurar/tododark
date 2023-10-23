@@ -18,11 +18,14 @@ import { ListChecks, Trash } from '@phosphor-icons/react'
 import { ButtonWithTooltip } from '../ButtonWithTooltip'
 
 import styles from './styles.module.css'
+import * as Dialog from '@radix-ui/react-dialog'
 
 export function Main() {
   const [task, setTask] = useState('')
   const [tasksList, setTasksList] = useState<TaskProps[]>([])
   const [isCheckAllTasks, setIsCheckAllTasks] = useState(false)
+  const [isDeleteAllTasksModalOpen, setIsDeleteAllTasksModalOpen] =
+    useState(false)
 
   const taskCharactersQuantity = task.length
   const tasksListQuantity = tasksList.length
@@ -101,9 +104,18 @@ export function Main() {
     setIsCheckAllTasks((prevState) => !prevState)
   }
 
+  function handleOpenDeleteAllTasksModal() {
+    setIsDeleteAllTasksModalOpen(true)
+  }
+
+  function handleCloseDeleteAllTasksModal() {
+    setIsDeleteAllTasksModalOpen(false)
+  }
+
   function handleDeleteAllTasks() {
     tasksDeleteAll()
     updateTasksList()
+    handleCloseDeleteAllTasksModal()
   }
 
   const tasksCardsList = tasksList.map((task) => (
@@ -174,7 +186,7 @@ export function Main() {
               icon={Trash}
               isActive={isCheckAllTasks}
               label="Excluir todas tarefas"
-              onPress={handleDeleteAllTasks}
+              onPress={handleOpenDeleteAllTasksModal}
               isDisabled={!isCheckAllTasks}
             />
           </div>
@@ -188,6 +200,31 @@ export function Main() {
 
         <section className={styles.tasksCardsList}>{tasksCardsList}</section>
       </section>
+
+      <Dialog.Root open={isDeleteAllTasksModalOpen}>
+        <Dialog.Portal>
+          <Dialog.Overlay className={styles.overlay} />
+          <Dialog.Content className={styles.modal}>
+            <header>
+              <Dialog.Title>Atenção</Dialog.Title>
+            </header>
+            <Dialog.Description>
+              Tem certeza que deseja <strong>excluir todas</strong> as tarefas?
+            </Dialog.Description>
+            <footer className={styles.footerModal}>
+              <Dialog.Close
+                onClick={handleCloseDeleteAllTasksModal}
+                aria-label="Fechar"
+              >
+                Não
+              </Dialog.Close>
+              <Dialog.Close onClick={handleDeleteAllTasks} aria-label="Fechar">
+                Sim
+              </Dialog.Close>
+            </footer>
+          </Dialog.Content>
+        </Dialog.Portal>
+      </Dialog.Root>
     </main>
   )
 }
