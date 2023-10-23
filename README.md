@@ -102,13 +102,12 @@
   [![Design](https://i.imgur.com/xDgCJf4.png)](https://www.figma.com/file/u2TAXCfiufWLNRZibyl3Hj/ToDo-List-%E2%80%A2-Desafio-React-(Copy)?type=design&node-id=56-96&mode=design&t=nl3sM63VnZNZZuAn-0)
 </div>
 
-  <div align="center" >
+- **Excluindo tarefas**
+
+<div align="center" >
       <img src="https://i.imgur.com/NmF6GZD.png" width="800">
       <img src="https://i.imgur.com/sFUnh0p.png" width="800">
-  </div>
-  <div align="center" >
-      <img src="" width="350">_<img src="" width="350">
-  </div>
+</div>
 
 ---
 

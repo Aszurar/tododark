@@ -19,10 +19,6 @@ export function AddButton() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  useEffect(() => {
-    console.log('Largura da tela', currentBrowserWidth)
-  }, [currentBrowserWidth])
-
   return (
     <button
       type="submit"
