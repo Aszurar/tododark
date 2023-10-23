@@ -19,7 +19,6 @@
     --red-500: #E25858;
   }
   
-
   :focus {
     outline: transparent;
     box-shadow: 0 0 0 2px var(--purple-700);
@@ -29,6 +28,7 @@
     background-color: var(--purple-700);
     color: var(--white);
   }
+  
   * {
     margin: 0;
     padding: 0;
@@ -56,6 +56,14 @@
     color: var(--gray-100);
   }
 
+  @media (max-width: 480px) {
+    html {
+      /* 16px => 100% */
+      /* 14px =>   x */
+      /* 16x = 1400 => x =  87.7% */
+        font-size: 87.5%;
+    }
+  }
   
   a {
     text-decoration: none;
