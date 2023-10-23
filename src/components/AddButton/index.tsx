@@ -24,7 +24,11 @@ export function AddButton() {
   }, [currentBrowserWidth])
 
   return (
-    <button type="submit" className={styles.button}>
+    <button
+      type="submit"
+      className={styles.button}
+      aria-label="Criar nova tarefa"
+    >
       {!hasTitleButton && 'Criar'}
       <PlusCircle size={16} weight="bold" />
     </button>
