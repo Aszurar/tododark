@@ -19,9 +19,9 @@
   border-radius: 4px;
   padding: 0.6rem 1rem;
   line-height: 1;
-  color: var(--purple-700);
-  background-color: var( --white);
-  font-weight: 500;
+  color: var(--purple-500);
+  font-weight: 700;
+  background-color: var(--gray-500);
   box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
   user-select: none;
   animation-duration: 400ms;
@@ -30,5 +30,5 @@
 }
 
 .tooltipArrow {
-  fill: var(--white);
+  fill: var(--purple-500);
 }
