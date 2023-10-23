@@ -1,0 +1,53 @@
+
+.checkAllColor {
+    color: var(--white);
+    background-color: var(--gray-400);
+}
+
+.uncheckAllColor {
+    color: var(--gray-300);
+}
+
+.button {
+    outline: none;
+    background-color: var(--gray-500);
+
+    padding: 2px 4px;
+    border-radius: 6px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.3s;
+
+    &:hover {
+        color: var(--white);
+        background-color: var(--gray-400);
+    }
+    &:disabled {
+        color: var(--gray-300);
+        background-color: var(--gray-500);
+        cursor: no-drop;
+    }
+}
+
+
+.tooltipContent {
+    border-radius: 4px;
+    padding: 0.6rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--purple-500);
+    background-color: var( --gray-500);
+    box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
+    user-select: none;
+    animation-duration: 400ms;
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform, opacity;
+  }
+  
+  .tooltipArrow {
+    fill: var(--purple-500);
+  }
