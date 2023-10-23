@@ -53,7 +53,7 @@
 
 - **Adição de tarefa**
   <div align="center" >
-      <img src="https://i.imgur.com/SjbCQ0f.png" width="350">_<img src="https://i.imgur.com/HZGRTpq.png" width="350">
+      <img src="https://i.imgur.com/IRVvDpM.png" width="350">_<img src="https://i.imgur.com/tUiQI9o.png" width="350">
   </div>
 
 ---
