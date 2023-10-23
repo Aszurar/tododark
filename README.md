@@ -54,8 +54,8 @@
 - **Adição de tarefa**
 
 <div align="center" >
-      <img src="https://i.imgur.com/IRVvDpM.png" width="800">
-      <img src="https://i.imgur.com/tUiQI9o.png" width="800">
+      <img src="https://i.imgur.com/IRVvDpM.png" width="700">
+      <img src="https://i.imgur.com/tUiQI9o.png" width="700">
 </div>
 
 ---
@@ -86,8 +86,8 @@
 
 - **Marcando tarefas**
   <div align="center" >
-      <img src="https://i.imgur.com/oIwtbi3.png" width="800">
-      <img src="https://i.imgur.com/SpZr18B.png" width="800">
+      <img src="https://i.imgur.com/oIwtbi3.png" width="700">
+      <img src="https://i.imgur.com/SpZr18B.png" width="700">
   </div>
 
 ---
@@ -105,8 +105,8 @@
 - **Excluindo tarefas**
 
 <div align="center" >
-      <img src="https://i.imgur.com/NmF6GZD.png" width="800">
-      <img src="https://i.imgur.com/sFUnh0p.png" width="800">
+      <img src="https://i.imgur.com/NmF6GZD.png" width="700">
+      <img src="https://i.imgur.com/sFUnh0p.png" width="700">
 </div>
 
 ---
@@ -121,9 +121,9 @@
 - **Excluindo todas tarefas**
 
   <div align="center" >
-      <img src="https://i.imgur.com/UjpV7oP.png" width="800">
-      <img src="https://i.imgur.com/7U47hiU.png" width="800">
-      <img src="https://i.imgur.com/UYH97ns.png" width="800">
+      <img src="https://i.imgur.com/UjpV7oP.png" width="700">
+      <img src="https://i.imgur.com/7U47hiU.png" width="700">
+      <img src="https://i.imgur.com/UYH97ns.png" width="700">
   </div>
 
 ---
