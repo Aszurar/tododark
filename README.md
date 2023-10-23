@@ -1,7 +1,7 @@
 # #2 - React: **<https://tododark-aszurar.netlify.app>**
 
 <div align="center">
-    <img src="https://i.imgur.com/qW74Df1.png" width="1000">
+    <img src="https://i.imgur.com/A9ywYDA.png" width="1000">
 </div>
 
 ## todo dark
@@ -51,12 +51,9 @@
 - Para a construção da interface desse projeto foi usado **[React](https://react.dev)** com **[TypeScript](https://www.typescriptlang.org/)**.
 - A estilização é feita com CSS comum sem nenhuma lib por meio do **[CSS modules](https://github.com/css-modules/css-modules)** já que a ideia é entender o básico do React em desenvolvimento web.
 
-- **Realizando Comentário**
-   <div align="center" >
-      <img src="" width="500">
-   </div>
+- **Adição de tarefa**
   <div align="center" >
-      <img src="" width="350">_<img src="" width="350">
+      <img src="https://i.imgur.com/SjbCQ0f.png" width="350">_<img src="https://i.imgur.com/HZGRTpq.png" width="350">
   </div>
 
 ---
@@ -101,10 +98,9 @@
 - O Design do projeto foi fornecido pela **[Rocketseat](https://www.rocketseat.com.br/)** no primeiro módulo do Ignite - React por meio do Figma.
 
 <div align="center">
-  <h3><a href="https://www.figma.com/file/hJ0lfBcqF3lM76iVweb1y0/Ignite-Feed-(Community)?type=design&node-id=0-1&mode=design&t=RuHSPQg3xNweHyde-0">todo dark</a></h3>
+  <h3><a href="https://www.figma.com/file/u2TAXCfiufWLNRZibyl3Hj/ToDo-List-%E2%80%A2-Desafio-React-(Copy)?type=design&node-id=56-96&mode=design&t=nl3sM63VnZNZZuAn-0">todo dark</a></h3>
 
-  [![Design](https://i.imgur.com/xDgCJf4.png)](https://www.figma.com/file/hJ0lfBcqF3lM76iVweb1y0/Ignite-Feed-(Community)?type=design&node-id=0-1&mode=design&t=RuHSPQg3xNweHyde-0)
-
+  [![Design](https://i.imgur.com/xDgCJf4.png)](https://www.figma.com/file/u2TAXCfiufWLNRZibyl3Hj/ToDo-List-%E2%80%A2-Desafio-React-(Copy)?type=design&node-id=56-96&mode=design&t=nl3sM63VnZNZZuAn-0)
 </div>
 
 ---
