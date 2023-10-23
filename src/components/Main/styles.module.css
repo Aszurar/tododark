@@ -72,6 +72,8 @@
 
     font-size: 0.875rem;
 
+    margin-top: 0.375rem;
+
     
     & strong span {
         background: var(--gray-400);
