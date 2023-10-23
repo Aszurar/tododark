@@ -1,4 +1,3 @@
-
 export function CheckIcon() {
   return (
     <svg
@@ -38,5 +37,5 @@ export function CheckIcon() {
         </defs>
       </g>
     </svg>
-  );
+  )
 }
