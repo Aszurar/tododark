@@ -36,11 +36,15 @@
 
 ---
 
-<div align="center" >
-    <img src="" width="500">
+<div align="center">
+    <img src="https://i.imgur.com/xNd42KX.gif" width="800">
 </div>
 
-- [**Link do vídeo completo sobre o projeto**]()
+<div align="center" >
+
+**[Link do vídeo completo sobre o projeto](https://www.youtube.com/watch?v=gKQKxQGicZM)**
+
+</div>
 
 ---
 
@@ -54,8 +58,8 @@
 - **Adição de tarefa**
 
 <div align="center" >
-      <img src="https://i.imgur.com/IRVvDpM.png" width="700">
-      <img src="https://i.imgur.com/tUiQI9o.png" width="700">
+      <img src="https://i.imgur.com/vDhUAgO.png" width="700">
+      <img src="https://i.imgur.com/Jv9QDgS.png" width="700">
 </div>
 
 ---
@@ -85,9 +89,10 @@
   7. Estilização com CSS modules
 
 - **Marcando tarefas**
+
   <div align="center" >
-      <img src="https://i.imgur.com/oIwtbi3.png" width="700">
-      <img src="https://i.imgur.com/SpZr18B.png" width="700">
+      <img src="https://i.imgur.com/4arLhvP.png" width="700">
+      <img src="https://i.imgur.com/m6QNJ5A.png" width="700">
   </div>
 
 ---
@@ -105,8 +110,8 @@
 - **Excluindo tarefas**
 
 <div align="center" >
-      <img src="https://i.imgur.com/NmF6GZD.png" width="700">
-      <img src="https://i.imgur.com/sFUnh0p.png" width="700">
+      <img src="https://i.imgur.com/Rs3Gk7L.png" width="700">
+      <img src="https://i.imgur.com/UGDzfnC.png" width="700">
 </div>
 
 ---
@@ -121,9 +126,9 @@
 - **Excluindo todas tarefas**
 
   <div align="center" >
-      <img src="https://i.imgur.com/UjpV7oP.png" width="700">
-      <img src="https://i.imgur.com/7U47hiU.png" width="700">
-      <img src="https://i.imgur.com/UYH97ns.png" width="700">
+      <img src="https://i.imgur.com/LrGYJwP.png" width="700">
+      <img src="https://i.imgur.com/0885SsL.png" width="700">
+      <img src="https://i.imgur.com/XJoxHbV.png" width="700">
   </div>
 
 ---
@@ -192,4 +197,8 @@
 
 ---
 
+<div align="center">
+
 Desenvolvido por :star2: Lucas de Lima Martins de Souza.
+
+</div>
