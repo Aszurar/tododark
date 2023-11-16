@@ -14,7 +14,7 @@ import {
   checkAllTasks,
   uncheckAllTasks,
 } from '../../storage/tasks/tasksCheck'
-import { ListChecks, Trash } from '@phosphor-icons/react'
+import { List, ListChecks, Trash } from '@phosphor-icons/react'
 import { ButtonWithTooltip } from '../ButtonWithTooltip'
 
 import { EmptyList } from '../EmptyList'
@@ -23,7 +23,6 @@ import styles from './styles.module.css'
 export function Main() {
   const [task, setTask] = useState('')
   const [tasksList, setTasksList] = useState<TaskProps[]>([])
-  const [isCheckAllTasks, setIsCheckAllTasks] = useState(false)
   const [isDeleteAllTasksModalOpen, setIsDeleteAllTasksModalOpen] =
     useState(false)
 
@@ -32,7 +31,13 @@ export function Main() {
   const tasksListCheckedQuantity = tasksList.filter(
     (task) => task.isChecked,
   ).length
-  const isDisabledCheckAllButtons = tasksListQuantity === 0
+  const isAllTasksButtonsActivated =
+    tasksListCheckedQuantity === tasksListQuantity
+  const isDisableCheckAllTaskButton = tasksListQuantity === 0
+  const isUncheckedAllTasksButtonsActivated = tasksListCheckedQuantity === 0
+
+  const isDisableDeleteAllTaskButton =
+    isDisableCheckAllTaskButton || !isAllTasksButtonsActivated
 
   function handleChangeTask(event: ChangeEvent<HTMLTextAreaElement>) {
     setTask(event.target.value)
@@ -52,14 +57,11 @@ export function Main() {
 
   function updateTasksList() {
     const tasksListUpdated = tasksGetAll()
-    console.log('Lista de tarefas', tasksListUpdated)
     const tasksListSortedByDateDescending =
       onSortByDateDescending(tasksListUpdated)
     const tasksListSortedByChecked = onSortByChecked(
       tasksListSortedByDateDescending,
     )
-
-    console.log('Lista de tarefas ordenada', tasksListSortedByChecked)
 
     setTasksList(tasksListSortedByChecked)
   }
@@ -103,8 +105,13 @@ export function Main() {
     updateTasksList()
   }
 
-  function handleToggleCheckAllTasks() {
-    setIsCheckAllTasks((prevState) => !prevState)
+  function handleCheckAllTasks() {
+    checkAllTasks()
+    updateTasksList()
+  }
+  function handleUncheckAllTasks() {
+    uncheckAllTasks()
+    updateTasksList()
   }
 
   function handleOpenDeleteAllTasksModal() {
@@ -138,22 +145,6 @@ export function Main() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  useEffect(() => {
-    if (isCheckAllTasks) {
-      checkAllTasks()
-    } else {
-      uncheckAllTasks()
-    }
-    updateTasksList()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isCheckAllTasks])
-
-  useEffect(() => {
-    if (tasksListQuantity === 0) {
-      setIsCheckAllTasks(false)
-    }
-  }, [tasksListQuantity])
-
   return (
     <main className={styles.main}>
       <header>
@@ -179,22 +170,29 @@ export function Main() {
 
           <div className={styles.checkAllContainer}>
             <ButtonWithTooltip
+              icon={List}
+              isActive={isUncheckedAllTasksButtonsActivated}
+              onPress={handleUncheckAllTasks}
+              label="Desmarcar todas tarefas"
+              isDisabled={isDisableCheckAllTaskButton}
+            />
+            <ButtonWithTooltip
               icon={ListChecks}
-              isActive={isCheckAllTasks}
-              onPress={handleToggleCheckAllTasks}
+              isActive={isAllTasksButtonsActivated}
+              onPress={handleCheckAllTasks}
               label="Marcar todas tarefas"
-              isDisabled={isDisabledCheckAllButtons}
+              isDisabled={isDisableCheckAllTaskButton}
             />
             <ButtonWithTooltip
               icon={Trash}
-              isActive={isCheckAllTasks}
+              isActive={isAllTasksButtonsActivated}
               label="Excluir todas tarefas"
               onPress={handleOpenDeleteAllTasksModal}
-              isDisabled={!isCheckAllTasks}
+              isDisabled={isDisableDeleteAllTaskButton}
             />
           </div>
           <strong>
-            Concluídas{' '}
+            Concluídas
             <span>
               {tasksListCheckedQuantity} de {tasksListQuantity}
             </span>

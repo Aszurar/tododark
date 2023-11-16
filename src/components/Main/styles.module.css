@@ -92,14 +92,29 @@
 
     & strong:last-child {
         color: var(--purple-500);
+        width: 150px;
+        text-align: end;
     }
 
-    @media (max-width: 360px) {
+    @media (max-width: 430px) {
         flex-direction: column;
-
+        position: relative;
         & div {
             order: -1;
         }
+
+        & strong:first-child {
+            width: 100%;
+            text-align: start;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+        & strong:last-child {
+            width: 100%;
+            text-align: end;
+        }
+
     }
 }
 
@@ -159,7 +174,7 @@
   
     border: 2px solid var(--purple-500);
     border-radius: 8px;
-    background-color: var(--gray-500);
+    background-color: var(--gray-600);
     color: var(--gray-100);
   
     position: fixed;
@@ -214,23 +229,21 @@
   }
 
 .footerModal button:first-child {
-    background: var(--blue-700);
-
+    background-color: var(--gray-400);
     transition: all 0.4s;
 
     &:hover {
-       background-color: var(--blue-500);
+       background-color: var(--gray-350);
       }
 }
 
 .footerModal button:last-child {
-    background: var(--purple-700);
-
+    background-color: var(--gray-400);
     transition: all 0.4s;
 
     &:hover {
-       background-color: var(--purple-500);
-      }
+       background-color: var(--gray-350);  
+    }
   }
 
 
