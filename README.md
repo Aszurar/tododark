@@ -8,7 +8,6 @@
 
 - O projeto **todo dark** é um site de lista de tarefas, com a possibilidade de adicionar, remover, marcar e persistir os dados de forma simples na web.
 - A acessibilidade também foi levada em consideração, com o uso da lib axe-core para testes e correções de acessibilidade assim como leitor de tela ChromeVox.
-- - A animação da listagem é feita com a lib **[AutoAnimate](https://auto-animate.formkit.com/)**.
 - O site foi publicado com CI/CD por meio da plataforma **[Netlify](https://www.netlify.com/)**.
 - Acesse em: **<https://tododark-aszurar.netlify.app>**
 
@@ -54,6 +53,7 @@
 - O projeto **todo dark** é um site de lista de tarefas, com a possibilidade de adicionar, remover, marcar como concluída e persistir as tarefas por meio do localStorage.
 - É o 1º desafio do curso **Ignite da trilha React Native 2022 da [Rocketseat](https://www.rocketseat.com.br/)**
 - Para a construção da interface desse projeto foi usado **[React](https://react.dev)** com **[TypeScript](https://www.typescriptlang.org/)**.
+- A animação da listagem é feita com a lib **[AutoAnimate](https://auto-animate.formkit.com/)**.
 - A estilização é feita com CSS comum sem nenhuma lib por meio do **[CSS modules](https://github.com/css-modules/css-modules)** já que a ideia é entender o básico do React em desenvolvimento web.
 
 - **Adição de tarefa**
