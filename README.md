@@ -8,6 +8,7 @@
 
 - O projeto **todo dark** é um site de lista de tarefas, com a possibilidade de adicionar, remover, marcar e persistir os dados de forma simples na web.
 - A acessibilidade também foi levada em consideração, com o uso da lib axe-core para testes e correções de acessibilidade assim como leitor de tela ChromeVox.
+- - A animação da listagem é feita com a lib **[AutoAnimate](https://auto-animate.formkit.com/)**.
 - O site foi publicado com CI/CD por meio da plataforma **[Netlify](https://www.netlify.com/)**.
 - Acesse em: **<https://tododark-aszurar.netlify.app>**
 
@@ -138,17 +139,18 @@
 - O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
   1. **[axe-core/react](https://www.npmjs.com/package/@axe-core/react)**
-  2. **[Date FNS](https://date-fns.org/)**
-  3. **[JavaScript](https://developer.mozilla.org/pt1.BR/docs/Web/JavaScript)**
-  4. **[Netlify](https://www.netlify.com/)**
-  5. **[NodeJS](https://nodejs.org/en/)**
-  6. **[Phosphor Icons](https://phosphoricons.com/)**
-  7. **[Radix UI](https://www.radix-ui.com/)**
-  8. **[React](https://pt1.br.react.dev/)**
-  9. **[Sentry](https://sentry.io/welcome/)**
-  10. **[TypeScript](https://www.typescriptlang.org/)**
-  11. **[Vite](https://vitejs.dev/)**
-  12. **[Yarn](https://classic.yarnpkg.com/blog/2017/05/12/introducing-yarn/)**
+  2. **[AutoAnimate](https://auto-animate.formkit.com/)**
+  3. **[Date FNS](https://date-fns.org/)**
+  4. **[JavaScript](https://developer.mozilla.org/pt1.BR/docs/Web/JavaScript)**
+  5. **[Netlify](https://www.netlify.com/)**
+  6. **[NodeJS](https://nodejs.org/en/)**
+  7. **[Phosphor Icons](https://phosphoricons.com/)**
+  8. **[Radix UI](https://www.radix-ui.com/)**
+  9. **[React](https://pt1.br.react.dev/)**
+  10. **[Sentry](https://sentry.io/welcome/)**
+  11. **[TypeScript](https://www.typescriptlang.org/)**
+  12. **[Vite](https://vitejs.dev/)**
+  13. **[Yarn](https://classic.yarnpkg.com/blog/2017/05/12/introducing-yarn/)**
 
 ---
 
