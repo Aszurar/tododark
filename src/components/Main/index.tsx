@@ -9,6 +9,8 @@ import { MAX_TASK_TITLE_LENGTH, TaskProps } from '../../dto/taskDTO'
 import { taskCreate } from '../../storage/tasks/tasksCreate'
 import { tasksGetAll } from '../../storage/tasks/tasksGetAll'
 import { tasksDelete, tasksDeleteAll } from '../../storage/tasks/tasksDelete'
+import { useAutoAnimate } from '@formkit/auto-animate/react'
+
 import {
   taskCheck,
   checkAllTasks,
@@ -22,6 +24,7 @@ import styles from './styles.module.css'
 
 export function Main() {
   const [task, setTask] = useState('')
+  const [parent] = useAutoAnimate()
   const [tasksList, setTasksList] = useState<TaskProps[]>([])
   const [isDeleteAllTasksModalOpen, setIsDeleteAllTasksModalOpen] =
     useState(false)
@@ -199,7 +202,7 @@ export function Main() {
           </strong>
         </section>
 
-        <section className={styles.tasksCardsList}>
+        <section ref={parent} className={styles.tasksCardsList}>
           {tasksListQuantity === 0 ? <EmptyList /> : tasksCardsList}
         </section>
       </section>
