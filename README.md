@@ -42,7 +42,7 @@
 
 <div align="center" >
 
-**[Link do vídeo completo sobre o projeto](https://www.youtube.com/watch?v=gKQKxQGicZM)**
+**[Link do vídeo completo sobre o projeto](https://www.youtube.com/watch?v=RIIGVwqbESE)**
 
 </div>
 
