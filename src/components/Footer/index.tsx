@@ -15,7 +15,7 @@ export function Footer() {
         <LinkButton
           icon={GithubLogo}
           label="Acessar Github"
-          link="https://github.com/Aszurar/igniteFeed"
+          link="https://github.com/Aszurar/tododark"
         />
         <LinkButton
           icon={LinkedinLogo}
