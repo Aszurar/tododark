@@ -3,7 +3,7 @@ import styles from './styles.module.css'
 export function Header() {
   return (
     <header className={styles.header}>
-      <img src={Logo} alt="Todo" />
+      <img src={Logo} alt="Todo" loading="lazy" decoding="async" />
     </header>
   )
 }
