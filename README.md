@@ -13,6 +13,12 @@
 
   <div align="center">
     <h3><a href="https://tododark-aszurar.netlify.app">todo dark</a></h3>
+
+
+
+    https://github.com/Aszurar/tododark/assets/64987824/659d19e4-1bc1-446d-a2de-cf5e80806ed8
+
+
   </div>
 
 <div align="center">
@@ -37,12 +43,12 @@
 ---
 
 <div align="center">
-    <img src="https://i.imgur.com/xNd42KX.gif" width="800">
+    <img src="https://i.imgur.com/xNd42KX.gif" width="400">
 </div>
 
 <div align="center" >
 
-**[Link do vídeo completo sobre o projeto](https://www.youtube.com/watch?v=RIIGVwqbESE)**
+**[Vídeo no Youtube](https://www.youtube.com/watch?v=RIIGVwqbESE)**
 
 </div>
 
