@@ -7,6 +7,8 @@
 ## todo dark
 
 - O projeto **todo dark** é um site de lista de tarefas, com a possibilidade de adicionar, remover, marcar e persistir os dados de forma simples na web.
+- O propósito aqui é praticar conceitos básicos de **React e seus estados, otimização com memo**, uso do **TypeScript e date-fns** e estilização via **CSS modules e Radix UI**.
+
 - A acessibilidade também foi levada em consideração, com o uso da lib axe-core para testes e correções de acessibilidade assim como leitor de tela ChromeVox.
 - O site foi publicado com CI/CD por meio da plataforma **[Netlify](https://www.netlify.com/)**.
 - Acesse em: **<https://tododark-aszurar.netlify.app>**
